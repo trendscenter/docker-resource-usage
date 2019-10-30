@@ -6,7 +6,7 @@ Before you start a Docker container, run this command in a Terminal window to lo
 
 `while true; do docker stats --no-stream | tee -a stats.txt; sleep 1; done`
 
-where stats.txt is the filename you want to save the data to. Once the process is finished, hit Ctrl+C to stop the recording.
+where `stats.txt` is the filename you want to save the data to. Once the process is finished, hit `ctrl+c` to stop the recording.
 
 This command will create a file that looks like this:
 
