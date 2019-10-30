@@ -2,7 +2,7 @@
 Plots resource usage by a Docker container
 
 ## Usage
-Before you start a Docker container, run this command in a Terminal window to log docker stats to a file:
+Before you start a Docker container, run this command in a Terminal window on Mac OS to log docker stats to a file:
 
 `while true; do docker stats --no-stream | tee -a stats.txt; sleep 1; done`
 
