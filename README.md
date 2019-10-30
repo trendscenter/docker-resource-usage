@@ -28,4 +28,5 @@ This script will create cleaned data files and plots and save them in a local `r
 
 
 ## TODO
-Add MEM %, NET I/O, BLOCK I/O
+- Add MEM %, NET I/O, BLOCK I/O
+- Write a script that includes recording, parsing, and plotting of docker stats
