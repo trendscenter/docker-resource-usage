@@ -2,9 +2,11 @@
 Plots resource usage by a Docker container
 
 ## Usage
-Before you start a Docker container, run this command in a Terminal window:
+Before you start a Docker container, run this command in a Terminal window to log docker stats to a file:
 
 `while true; do docker stats --no-stream | tee -a stats.txt; sleep 1; done`
+
+where stats.txt is the filename you want to save the data to. Once the process is finished, hit Ctrl+C to stop the recording.
 
 This command will create a file that looks like this:
 
@@ -16,13 +18,13 @@ CONTAINER ID        NAME                    CPU %               MEM USAGE / LIMI
 cb5fe1ddbcc2        reminders_pgbackups_1   0.00%               1.551MiB / 15.65GiB   0.01%               2kB / 0B            20MB / 0B           6
 ...
 
-It will keep repeating like that until the command is canceled.
+The file will continue like that until the command is canceled.
 
-This script takes that file as input and produces plots of the resource usage contained therein.
+This script takes that file as input and produces plots of the resource usage.
 
 `python plot_usage.py /path/to/file`
 
-It will create cleaned data files and plots in a local `results` folder.
+This script will create cleaned data files and plots and save them in a local `results` folder.
 
 
 ## TODO
