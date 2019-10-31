@@ -4,7 +4,7 @@ Plots resource usage by a Docker container
 ## Usage
 Before you start a Docker container, run the included script in a Terminal window on Mac OS to log docker stats to a file:
 
-$ ./log_docker_stats.sh /path/to/file
+`$ ./log_docker_stats.sh /path/to/file`
 
 where `/path/to/file` is the path to the file you want to save the data to. Credit to this [post](https://github.com/moby/moby/issues/22618) for that command. Once the process is finished, hit `ctrl+c` to stop the recording.
 
