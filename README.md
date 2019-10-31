@@ -6,7 +6,7 @@ Before you start a Docker container, run this command in a Terminal window on Ma
 
 `while true; do docker stats --no-stream | tee -a stats.txt; sleep 1; done`
 
-where `stats.txt` is the filename you want to save the data to. Once the process is finished, hit `ctrl+c` to stop the recording.
+where `stats.txt` is the filename you want to save the data to. Credit to this [post](https://github.com/moby/moby/issues/22618) for that command. Once the process is finished, hit `ctrl+c` to stop the recording.
 
 This command will create a file that looks like this:
 
@@ -29,4 +29,5 @@ This script will create cleaned data files and plots and save them in a local `r
 
 ## TODO
 - Add MEM %, NET I/O, BLOCK I/O
+- Turn that logging command into a bash script.
 - Write a script that includes recording, parsing, and plotting of docker stats
